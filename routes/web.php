@@ -27,8 +27,11 @@ Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 
+Route::group(['middleware' => ['auth']], function () {
+    Route::post('cart/{id}', 'CartsController@store')->name('carts.store');
+    Route::get('cart/{id}', 'CartsController@store');
+});
 
-Route::post('cart/{id}', 'CartsController@store')->name('carts.store');
 
 
 
@@ -40,6 +43,8 @@ Route::redirect('cartss', '/')->name('carts.welcome');
 
 
 Route::delete('discart/{id}', 'CartsController@destroy')->name('carts.discart');
+
+Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
 
 
 ?>

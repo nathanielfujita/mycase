@@ -1,4 +1,4 @@
-    カート一覧
+    チェックアウト
 
 <br>
 @if(count($carts) == null)
@@ -15,11 +15,7 @@
 @endif
     
 
-    {!! link_to_route('checkout.index', 'チェックアウト！！！', null, ['class' => 'btn btn-primary btn-lg']) !!}
+    {!! link_to_route('checkout.index', 'チェックアウトの続きへ！！！', null, ['class' => 'btn btn-primary btn-lg']) !!}
 
         <br>
             <br>{!! link_to_route('men.index', '商品一覧に戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
-    
-       
-    
-
