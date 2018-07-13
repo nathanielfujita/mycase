@@ -26,4 +26,35 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+ //カートリスト
+    public function carting()
+    {
+    return $this->belongsToMany(Item::class, 'carts', 'user_id', 'item_id');
+    }
+    
+    //カートに追加
+    public function addcart($id)
+    {
+     $exist = $this->is_carting($id);
+     if ($exist) {
+        return false;
+    } else {
+        $this->carting()->attach($id);
+        return true;
+    }
+    }
+    
+    //お気にに入りしているかどうか
+    public function is_carting($id)
+    {
+    return $this->carting()->where('item_id', $id)->exists(); //existsはwhereで値を探しだすことに成功すればtrueを返す
+    }
+    
+    
+    public function discart($id)
+    {
+    $this->carting()->detach($id);
+    } 
+   
 }
