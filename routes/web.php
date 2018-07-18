@@ -46,5 +46,15 @@ Route::delete('discart/{id}', 'CartsController@destroy')->name('carts.discart');
 
 Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
 
+Route::get('selectplan', 'SelectplanController@index')->name('selectplan.index');
+
+Route::get('hotelselect', 'HotelselectController@index')->name('hotelselect.index');
+
+Route::get('confirmation', 'ConfirmationController@index')->name('confirmation.index');
+
+Route::get('payment', 'PaymentController@index')->name('payment.index');
+
+Route::post('/contact', 'Confirmation2Controller@postIndex');
+Route::post('/plan', 'Selectplan2Controller@postIndex');
 
 ?>

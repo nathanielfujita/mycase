@@ -1,6 +1,7 @@
-    チェックアウト
+    <font size="20">チェックアウト</font>
 
 <br>
+    <br>
 @if(count($carts) == null)
          カートに何も入っていません
     @else
@@ -15,6 +16,8 @@
 @endif
     
 
+<br>
+    <br>
     {!! link_to_route('checkout.index', 'チェックアウトの続きへ！！！', null, ['class' => 'btn btn-primary btn-lg']) !!}
 
         <br>

@@ -3,7 +3,7 @@
     $items =App\Item::where('sex', 'M')->get()
     ?>
 
-男性服一覧
+    <font size="20">男性服一覧</font>
 
 <br>
     @if(Auth::check())    
@@ -39,7 +39,7 @@
     @endif
     
     
-{!! link_to_route('carts.index', 'カート一覧', null, ['class' => 'btn btn-primary btn-lg']) !!}
+{!! link_to_route('carts.index', 'カート一覧に進む', null, ['class' => 'btn btn-primary btn-lg']) !!}
     
     <br>
         <br>
