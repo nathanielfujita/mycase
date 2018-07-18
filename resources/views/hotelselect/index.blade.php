@@ -37,7 +37,6 @@
       
       </script>
       
-       
       <script type="text/javascript">
       $(document).ready(function () {
         $('#korea').click(function() {
@@ -156,19 +155,12 @@
     　  </div>　
     </body>
       　  
-      　  
 <input type="hidden" name="plan" value="<?=$plan?>">
 
 <input type="submit" value="送信" name="btn">
 <input type="hidden"  name="_token" value="{{ csrf_token() }}">
 </form>
 
-
-
-
-<br>
-    <br>
-      　</div> {!! link_to_route('confirmation.index', '最終確認画面へ進む', null, ['class' => 'btn btn-lg btn-primary']) !!}
 <br>
     <br>{!! link_to_route('selectplan.index', 'プランセレクトへ戻る', null, ['class' => 'btn btn-lg btn-primary']) !!}
 </body>
