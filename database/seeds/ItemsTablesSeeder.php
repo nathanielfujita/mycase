@@ -16,10 +16,11 @@ class ItemsTablesSeeder extends Seeder
             'sex' => 'M',
             'description'=>'テスト',
             'name' => 'tops',
-        
-        
-            
             ];
+            
+            
+        
+        
         DB::table('items')->insert($param);
     }
 }

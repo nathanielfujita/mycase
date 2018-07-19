@@ -92,12 +92,12 @@
    <div id="howto">
    <div id="1st-line">
         <div class="powerpoint">
-            <img src="WhyMyCase.jpg" alt="パワーポイント"></div>
+            <img src="homeimage/WhyMyCase.jpg" alt="パワーポイント"></div>
 
     
         <div class="powerpoint">
 
-            <img src="HowtouseMyCase.PNG" alt="AboutMyCase">
+            <img src="homeimage/HowtouseMyCase.PNG" alt="AboutMyCase">
         </div>
     </div>
     </center>
@@ -106,13 +106,13 @@
         <div class ="row">
             <div class="pictures col-sm-5 col-sm-offset-1">
                 <div class>
-                <img src="hawaii.jpg" alt="海の写真">
+                <img src="homeimage/hawaii.jpg" alt="海の写真">
                 </div>
             </div>
 
             <div class="powerpoint col-sm-5">
                 <div class>
-                <img src="MyCase1.PNG" alt="パワーポイント"></div>
+                <img src="homeimage/MyCase1.PNG" alt="パワーポイント"></div>
                 </div>
             </div>
         </div>
@@ -123,7 +123,7 @@
         <div class = "row">
             <div class="powerpoint col-sm-5 col-sm-offset-1">
                 <div class>
-                <img src="MyCase2.PNG" alt="パワーポイント">
+                <img src="homeimage/MyCase2.PNG" alt="パワーポイント">
                 </div>
             </div>
     
