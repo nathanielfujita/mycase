@@ -170,17 +170,17 @@ html{
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background:url('homeimage/viber image1.jpg');
+  background:url('../homeimage/viber_image1.jpg');
   background-size:cover;
   color: #555555
 }
 .item-2{
-  background:url('homeimage/viber image3.jpg');
+  background:url('../homeimage/viber_image3.jpg');
   background-size:cover;
   color: #555555
 }
 .item-3{
-  background:url('homeimage/viber image2.jpg');
+  background:url('../homeimage/viber_image2.jpg');
   background-size:cover;
 }
 
