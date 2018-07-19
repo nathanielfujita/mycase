@@ -12,7 +12,7 @@ class ItemsTablesSeeder extends Seeder
     public function run()
     {
         $param = [
-            'image' => 'images/id_1.jpg',
+            'image' => 'image/id_1.jpg',
             'sex' => 'M',
             'description'=>'テスト',
             'name' => 'tops',
