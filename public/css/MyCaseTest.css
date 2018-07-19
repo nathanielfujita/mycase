@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+
+
+body 
+{   margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}  
+
+header{
+    margin-top: 0px;
+    position: fixed;　/*メニューバーを常に左に表示*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10; /*メニューバーを前面に*/
+}
+ul {
+    padding: 0;
+}
+
+.logo img{
+    width: 110px;
+    height: auto;
+    position: static;
+    margin: 0px;
+    
+}
+
+.sidebar { 
+    clear: both;
+    position: fixed;
+    font-family: "cursive","Courier";/*フォントデザイン*/
+    background-color: #eeeeee;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding: -50px;
+    opacity: 0.5;
+}
+
+
+.sidebar  ul li {
+    list-style: none;
+    clear: both;
+    color: white;
+   /* vertical-align: top;/*行の上の高さそろえる*/
+  　height: 3.6em;/* 2em（行）x line-heightの1.8 */
+  　line-height: 1.8;/*1em(行)の高さ*/
+  　width: 100%;
+  　margin: -50px;
+  　padding:0;
+}
+
+.sidebar a {
+    display: block;
+}
+
+.sidebar > ul > li a:hover{
+    background-color: #fffafa;
+    opacity: 0.5;/*透過（文字含む）*/
+    width: 100%;
+}
+
+.sidebar .dropdown-menu li {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.dropdown-menu li:hover{
+    background-color: #fffafa;
+    opacity: 1;
+}
+
+.men{
+    color: blue;
+}
+
+.women{
+    color: red;
+}
+
+.en{
+    font-size: 30px;
+    font-weight: bold; /*太字に*/
+}
+
+br .ja{
+    font-size: 10px;
+    font-family: 'MS ゴシック',"cursive",sans-serif;
+}
+
+
+.except-header{
+    font-family: "cursive","メイリオ", sans-serif;
+    position: relative;
+    top: 270px;
+    z-index: 0; /*メニューバーの後ろにいくように（数値が小さいほうが後ろ）*/
+}
+
+
+
+
+
+html{
+    position: relative;
+}
+
+
+.float_box{
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+    
+}
+
+.carousel-wrapper{
+  height: 600px;
+  position:relative;
+  width: 100%;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  position:absolute;
+  top:0;
+  display:block;
+  width:50px;
+  height:100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev{
+  left:0;
+}
+ 
+.arrow-next{
+    right:0;
+    -webkit-transform: rotate(180deg);
+     transform: rotate(180deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+}
+/*Select every element*/
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background:url('viber image1.jpg');
+  background-size:cover;
+  color: #555555
+}
+.item-2{
+  background:url('viber image3.jpg');
+  background-size:cover;
+  color: #555555
+}
+.item-3{
+  background:url('viber image2.jpg');
+  background-size:cover;
+}
+
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+#1st-line{
+   width: 100%;  
+   clear: both;
+}
+
+
+
+
+h1 {
+font-size:1.75em;
+color:#333333;
+}
+
+h2 {
+clear: both;
+}
+
+
+
+body{
+overflow-x: hidden;
+}
+
+.powerpoint img{
+    width: 100%;
+    
+    
+}
+.pictures,
+.powerpoint {
+    padding: 0;
+    left: 80px;
+    
+}
+.pictures img{
+    width: 100%;
+}
+
+#howto{
+    margin-left: 10%; 
+}
+
+#ryoukin{
+    margin-left: 10%;
+}
