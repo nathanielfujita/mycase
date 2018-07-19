@@ -12,14 +12,12 @@ class ItemsTablesSeeder extends Seeder
     public function run()
     {
         $param = [
-            'image' => 'image/id_1.jpg',
-            'sex' => 'M',
+            'image' => 'image/f_id_1.jpg',
+            'sex' => 'F',
             'description'=>'テスト',
             'name' => 'tops',
             ];
-            
-            
-        
+
         
         DB::table('items')->insert($param);
     }
