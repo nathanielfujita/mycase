@@ -16,7 +16,7 @@ class ItemsTablesSeeder extends Seeder
             'sex' => 'M',
             'description'=>'テスト',
             'name' => 'tops',
-            'category' => 'topst',
+        
         
             
             ];
