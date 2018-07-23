@@ -3,7 +3,7 @@
     $items =App\Item::where('sex', 'F')->get()
     ?>
 
-    <font size="20">女性服一覧</font>
+    <font size="20">Women's Fashion</font></font>
 
 <br>
     @if(Auth::check())    

@@ -30,8 +30,17 @@
             　
             　 <div class = "logo"><img src="homeimage/MyCase-logo.jpg" alt="My Case"></div>
              　    <ul>
-             　        <li>{!! link_to_route('login', 'ログイン/登録') !!}</li>
+             　        
+             　        
+             　        
+             　        @if(Auth::check())
+                        <li> <font color="black", size="5">{{Auth::user()->email}}さん</font> </li>
              　        <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
+             　        
+             　        @else
+             　        <li>{!! link_to_route('login', 'ログイン/登録') !!}</li>
+             　        @endif
+             　        
              　        <li><a href = "#"><span class="en">Top</span><br class="ja">トップ</br></a></li>
                       <li><a href = "#1st-line"><span class="en">About My Case</span><br class="ja">MyCaseとは</br></a></li>
                       <li><a href = "#2nd-line"><span class="en">How to use</span><br class="ja">使い方</br></a></li>

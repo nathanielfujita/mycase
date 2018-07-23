@@ -53,8 +53,8 @@
       
       
     </head>
-    <body>
-      <font size="20">宿泊先選択</font>
+    <body><center>
+      <h1><font size="10"><font face="游ゴシック Light">宿泊予定のホテルを選択してください</font></font></h1>
       
       <br>
         <br>
@@ -81,9 +81,8 @@
         </div>
       </div> 
       
-
 <form method = 'post' action = '/contact'> 
-
+{{ csrf_field() }}
 
       <div class="row pt20">
     　<div class="col-xs-12">
@@ -155,12 +154,9 @@
     　  </div>　
     </body>
       　  
-<input type="hidden" name="plan" value="<?=$plan?>">
-
-<input type="submit" value="送信" name="btn">
-<input type="hidden"  name="_token" value="{{ csrf_token() }}">
+ <input type="hidden" name="plan"value= "<?=$plan?>"> 
+<center><input type="submit" value="セレクト" name="btn" class="square_btn"></center>
 </form>
-
 <br>
-    <br>{!! link_to_route('selectplan.index', 'プランセレクトへ戻る', null, ['class' => 'btn btn-lg btn-primary']) !!}
-</body>
+    <br>{!! link_to_route('selectplan.index', 'プラン選択へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+</center></body>

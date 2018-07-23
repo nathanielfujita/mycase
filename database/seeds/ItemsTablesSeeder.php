@@ -11,7 +11,7 @@ class ItemsTablesSeeder extends Seeder
      */
     public function run()
     {
-        
+      
 $param = [
             'image' => 'image/f_id_1.jpg',
             'sex' => 'F',
@@ -20,6 +20,7 @@ $param = [
             ];
             
         DB::table('items')->insert($param);    
+
 
 $param = [
             'image' => 'image/f_id_2.jpg',
@@ -67,7 +68,7 @@ $param = [
         DB::table('items')->insert($param);    
 
 $param = [
-            'image' => 'image/f_id_7jpg',
+            'image' => 'image/f_id_7.jpg',
             'sex' => 'F',
             'description'=>'ギンガムチェックのトップス',
             'name' => 'tops',
@@ -96,7 +97,7 @@ $param = [
 $param = [
             'image' => 'image/f_id_10.jpg',
             'sex' => 'F',
-            'description'=>''赤ビスチェ,
+            'description'=>'赤ビスチェ',
             'name' => 'tops',
             ];
             
@@ -391,7 +392,7 @@ $param = [
         DB::table('items')->insert($param);
         
 $param = [
-            'image' => 'image/id_12jpg',
+            'image' => 'image/id_12.jpg',
             'sex' => 'M',
             'description'=>'ジーパン',
             'name' => 'tops',

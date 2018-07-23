@@ -33,7 +33,6 @@ ul {
 .sidebar { 
     clear: both;
     position: fixed;
-    font-family: "cursive","Courier";/*フォントデザイン*/
     background-color: #eeeeee;
     width: 10%;
     height: 100%;
@@ -41,6 +40,7 @@ ul {
     margin-top: 0px;
     padding: -50px;
     opacity: 0.5;
+    font-family: "游ゴシック Light","cursive","Courier";
 }
 
 
@@ -70,6 +70,7 @@ ul {
     display: block;
     width: 100%;
     font-size: 20px;
+    text-align: center;
 }
 
 .dropdown-menu li:hover{
@@ -197,6 +198,17 @@ html{
     z-index: 3;
     opacity: 1;
 }
+
+
+h2{
+    font-size: 50px;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+
+
 
 
 #1st-line{

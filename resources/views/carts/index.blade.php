@@ -1,4 +1,7 @@
-    <font size="20">カート一覧</font>
+<link rel="stylesheet" href="css/cart.css">    
+    <div class="cart">
+        <font size="20">カート一覧</font>
+    </div>
 
 <br>
 @if(count($carts) == null)
@@ -20,8 +23,8 @@
     {!! link_to_route('selectplan.index', 'チェックアウトへ進む', ['id' => $cart->id], ['class' => 'btn btn-primary btn-lg']) !!}
     @endif
         <br>
-            <br>{!! link_to_route('men.index', '男性服商品一覧に戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
-            <br>{!! link_to_route('women.index', '女性服商品一覧に戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('men.index', "Men's Fashion一覧に戻る", null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('women.index', "Lady's Fashion商品一覧に戻る", null, ['class' => 'btn btn-primary btn-lg']) !!}
     
        
     

@@ -1,8 +1,8 @@
 @extends('layouts.app')
-
+  <link rel="stylesheet" href="css/register.css">
 @section('content')
     <div class="text-center">
-        <h1>Sign up</h1>
+        <h1>新規登録</h1>
     </div>
 
     <div class="row">
@@ -10,21 +10,21 @@
 
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
-                    {!! Form::label('email', 'Nickname') !!}
+                    {!! Form::label('email', 'ユーザー名') !!}
                     {!! Form::text('email', old('email'), ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password', 'Password') !!}
+                    {!! Form::label('password', 'パスワード（６文字以上）') !!}
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('password_confirmation', 'Confirmation') !!}
+                    {!! Form::label('password_confirmation', 'パスワード再入力') !!}
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('登録', ['class' => 'btn btn-warning btn-block']) !!}
             {!! Form::close() !!}
         </div>
     </div>

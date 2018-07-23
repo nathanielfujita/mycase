@@ -1,10 +1,12 @@
+<link rel="stylesheet" href="css/men.css">
+
 <?php
 
     $items =App\Item::where('sex', 'M')->get()
     ?>
-
-    <font size="20">男性服一覧</font>
-
+    <div class="title">
+        <center><font size="20">Men's Fashion</font></center>
+    </div>
 <br>
     @if(Auth::check())    
         @foreach($items as $item)
@@ -17,11 +19,11 @@
             {!! Form::open(['route' => ['carts.discart', $item->id], 'method' => 'delete']) !!}
             {!! Form::submit('カートから外す', ['class' => "btn btn-danger btn-lg"]) !!}
             {!! Form::close() !!}
-    
+         
     
             @else
             {!! Form::open(['route' => ['carts.store', $item->id], 'method' => 'store']) !!}
-            {!! Form::submit('カートに追加', ['class' => 'btn btn-primary btn-lg']) !!}
+            {!! Form::submit('カートに追加', ['class' => 'btn btn-warning btn-lg']) !!}
             {!! Form::close() !!}
         
         
