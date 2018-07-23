@@ -1,3 +1,27 @@
-.title center{
+.title {
     font-family: "游ゴシック Light";
+    border-bottom-width: 3px;
+    border-bottom: double 5px #FFA500;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+.fontsize {
+    font-size: 25px;
+}
+
+.gothic{
+    font-family: "游ゴシック Light";
+    font-weight: bold;
+}
+
+.inside{
+    font-size: 20px;
+}
+
+#a {
+    text-align: center;
+    font-family: "游ゴシック Light";
+    font-weight: bold;
 }

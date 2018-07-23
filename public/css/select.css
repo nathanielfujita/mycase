@@ -1,19 +1,36 @@
-h1 {
+.title {
  color: #666666;
  border-bottom: double 5px #FFC778;
+ font-weight: bold;
+ font-family: "游ゴシック Light";
+ font-size: 50px;
 /*線の種類（二重線）太さ 色*/
 }
+
+.bottomspace {
+    margin-bottom: 30px;
+}
+
+
+.center{
+    text-align: center;
+    font-family: "游ゴシック Light";
+    font-weight: bold;
+}
+
 .pt20{
   padding-top: 20px;
 }
 .checkbox-wrap{
+    
 }
 .label-checkbox input[type="checkbox"]{
   display: none;
+  
+
 }
 .label-checkbox{
   cursor: pointer;
-  
   position: relative;
 }
 .label-checkbox .lever{

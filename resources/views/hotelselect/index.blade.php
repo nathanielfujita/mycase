@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="css/select.css">
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="css/select.css">
+      <!-- Bootstrap CSS-->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- ビューポートの設定 -->
+	     <meta name="viewport" content="width=device-width,initial-scale=1">
+	     
       <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
+     
       </script>
       
       <script type="text/javascript">
@@ -54,7 +60,7 @@
       
     </head>
     <body><center>
-      <h1><font size="10"><font face="游ゴシック Light">宿泊予定のホテルを選択してください</font></font></h1>
+      <div class="title">=宿泊予定のホテルを選択してください=</div>
       
       <br>
         <br>
@@ -73,7 +79,7 @@
                   <span class="lever">台湾</span>
               </label>
               <label class="label-checkbox">
-                <input type="checkbox" id="korea"/>
+                <input type="checkbox" id="korea" />
                   <span class="lever">韓国</span>
               </label>
             </div>
@@ -155,8 +161,11 @@
     </body>
       　  
  <input type="hidden" name="plan"value= "<?=$plan?>"> 
-<center><input type="submit" value="セレクト" name="btn" class="square_btn"></center>
+<center><input type="submit" value="決定" name="btn" class="square_btn input-lg"></center>
 </form>
 <br>
-    <br>{!! link_to_route('selectplan.index', 'プラン選択へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+    <div class= "bottomspace"> 
+    <br>{!! link_to_route('selectplan.index', 'プラン選択へ戻る', null, ['class' => 'btn btn-sm btn-danger']) !!}
+    </div>
+  
 </center></body>

@@ -24,7 +24,7 @@
 
          <!--ここからヘッダー, リンク先の名前変える-->
         <header>
-            <div class="container-fluid col-sm-1">
+            <div class="container-fluid col-sm-1 col-xs-6">
             <div class="row">
             <div class="sidebar">
             　
@@ -70,7 +70,7 @@
 
 
 <body> 
-<div class="float_box">
+<div class="float_box ">
 
 <div class="carousel-wrapper">
   <span id="item-1"></span>
@@ -104,10 +104,12 @@
    <div id="howto">
    <div id="1st-line">
         <div class="powerpoint">
-            <img src="homeimage/WhyMyCase.jpg" alt="パワーポイント"></div>
+            <img src="homeimage/WhyMyCase.jpg" alt="パワーポイント">
+        </div>
 
+    <p class="selecthotel">※配送先は各国（台湾・韓国・ハワイ）それぞれ<br>５つの人気ホテルからお選びいただく形になります。</p>
     
-        <div class="powerpoint">
+    <div class="powerpoint">
 
             <img src="homeimage/HowtouseMyCase.PNG" alt="AboutMyCase">
         </div>
@@ -229,6 +231,11 @@
         <div class="powerpoint">
             <center><img src="homeimage/Plan1.jpg" alt="パワーポイント"></div></p></center>
     </div>    
+    
+    
+    <div class="checknavbar col-sm-offset-2">
+        <p>それでは左側のナビバーの<span class="red">"Items"</span>をクリックして始めましょう！</p>
+    </div>
 
 </body>
 </html>

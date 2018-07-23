@@ -2,5 +2,16 @@
     font-family: "游ゴシック Light";
     font-weight: bold;
     text-align: center;
-    
+    border-bottom-width: 3px;
+    border-bottom: double 5px #FFA500;
+}
+
+#a {
+    text-align: center;
+        font-family: "游ゴシック Light";
+    font-weight: bold;
+}
+
+.bottomspace {
+    margin-bottom: 30px;
 }
