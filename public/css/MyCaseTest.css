@@ -91,11 +91,22 @@ ul {
     font-weight: bold; /*太字に*/
 }
 
+.encolor{
+    font-size: 30px;
+    font-weight: bold; /*太字に*/
+    color: #FF0000;
+}
+
 br .ja{
     font-size: 10px;
     font-family: 'MS ゴシック',"cursive",sans-serif;
 }
 
+.color{
+    font-size: 15px;
+    font-family: 'MS ゴシック',"cursive",sans-serif;
+    color: #FF0000;
+}
 
 .except-header{
     font-family: "cursive","メイリオ", sans-serif;
@@ -264,7 +275,7 @@ overflow-x: hidden;
 }
 
 .red{
-    color: #0000ff;
+    color: #ff0000;
 }
 
 .selecthotel{

@@ -11,14 +11,12 @@
         <div class="title">
             <font size="20">=プランを選択してください=</font>
         </div>
-<br>
     <br> 
             <br>
     <div class="inside">        
     ただいまお客様のカートには <?php echo count($carts)?>  点の商品が入っています
     </div>
-    
-    <br>
+
         <br>
             <br>
             @if(count($carts)>3)
@@ -42,7 +40,6 @@
             @endif
          
 <br>
-    <br>
         <br>
             <br>
             @if(count($carts)>6)
@@ -68,7 +65,6 @@
             
 <br>
     <br>
-        <br>
             <br>
             @if(count($carts)>9)
            ４泊５日
@@ -93,7 +89,6 @@
             
 <br>
     <br>
-        <br>
             <br>
             @if(count($carts)>12)
            ５泊６日
@@ -116,7 +111,6 @@
             
             
 <br>
-    <br>
         <br>
             <br>
             @if(count($carts)>15)

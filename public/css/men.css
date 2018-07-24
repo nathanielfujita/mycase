@@ -1,11 +1,30 @@
+body{
+    position: relative;
+    
+}
+
 .title {
     font-family: "游ゴシック Light";
     border-bottom-width: 3px;
     border-bottom: double 5px #FFA500;
     font-weight: bold;
     font-size: 50px;
-    
+    position: fixed;
+    width:100%;
+    margin-top: 0;
+    z-index: 2;
+    background-color: white;
 }
+
+.header {
+    font-family: "游ゴシック Light";
+    border-bottom-width: 3px;
+    border-bottom: double 5px #FFA500;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -80px;
+}
+
 
 .fontsize {
     font-size: 25px;
@@ -24,4 +43,24 @@
     text-align: center;
     font-family: "游ゴシック Light";
     font-weight: bold;
+    z-index: 1;
+    padding-top: 90px;
+    
+}
+
+.titlelinks{
+    float: right;
+    margin-top: -70px;
+    margin-right: 180px;
+}
+
+
+
+.pics{
+    float: left;
+    display: flex;
+    width: 1500px;
+    overflow-y: scroll;
+    
+  
 }

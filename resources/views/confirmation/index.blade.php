@@ -31,8 +31,6 @@
     <p> <?php echo $plan?></p>
 
 
-
-<br>
     <br>
         <font size="5">選択した宿泊先：</font>
 <br>

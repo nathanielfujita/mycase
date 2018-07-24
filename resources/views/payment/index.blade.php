@@ -13,9 +13,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <div id="a">
-    <div class="title">=お支払い番号=</div>  
+    <div class="header">=お支払い番号=</div>  
     
-<br>
 <br>
 <br>
     

@@ -7,8 +7,12 @@
 </head>      
         
         
-    <div class="cart">
-        <font size="20">=カート一覧=</font>
+    <div class="cart ">
+            <font size="20 ">=カート一覧=</font>
+        <div class="titlelinks">
+                       <span class="return1"> {!! link_to_route('men.index', "Men's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}</span>
+                       <span class="return2">{!! link_to_route('women.index', "Women's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}</span>
+        </div>
     </div>
 
 <br>

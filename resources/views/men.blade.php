@@ -5,22 +5,29 @@
 </head>
 
 
+<body>
 <?php
 
     $items =App\Item::where('sex', 'M')->get()
     ?>
+  
     <div class="title">
         <center><font size="20">=Men's Fashion=</font></center>
+           <div class="titlelinks">
+            {!! link_to_route('carts.index', 'カート一覧に進む', null, ['class' => 'btn btn-success btn-lg']) !!}
+            {!! link_to_route('carts.welcome', 'ホームに戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
+           </div>
     </div>
 <br>
 <div id="a">
     
-    
+    <div class="row">
+        <div class="pics">
     @if(Auth::check())
         @foreach($items as $item)
-        <img src="{{url($item->image)}}" >
+        
+       <img src="{{url($item->image)}}">
         <br>
-         
          
             <?php print($item->description); ?>
             @if(Auth::user()->is_carting($item->id))
@@ -48,7 +55,8 @@
         {!! Form::close() !!}
         @endforeach
     @endif
-    
+        </div>
+    </div>
     
     <br>
         <br>
@@ -58,6 +66,6 @@
         <br>
         {!! link_to_route('carts.welcome', 'ホームに戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
 </div>
-
+</body>
     
 

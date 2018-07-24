@@ -8,7 +8,13 @@
     ?>
 
     <div class= "title">
-        <center>=Women's Fashion=</center>
+        <center><font size="20">=Women's Fashion=</font></center>
+            <div class="titlelinks">
+                {!! link_to_route('carts.index', 'カート一覧に進む', null, ['class' => 'btn btn-success btn-lg']) !!}
+                {!! link_to_route('carts.welcome', 'ホームに戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
+            </div>
+        
+        
     </div>
 
 <br>

@@ -50,7 +50,7 @@
                    
 <!--bootstrapでデザイン変える、性別選んだらアイテムページに飛べるようにする、-->
                       <li class="dropdown">
-					      <a class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="en">Items</span><br class="ja">商品</br><span class="caret"></span></a>
+					      <a class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="encolor">Items</span><span class="color"><br>商品</br></span><span class="caret"></span></a>
 					      <ul class="dropdown-menu" role="menu">
 						      <li>{!! link_to_route('men.index', 'Men') !!}</li>
 						      <li>{!! link_to_route('women.index', 'Women') !!}</li>
@@ -234,7 +234,7 @@
     
     
     <div class="checknavbar col-sm-offset-2">
-        <p>それでは左側のナビバーの<span class="red">"Items"</span>をクリックして始めましょう！</p>
+        <p>それでは左側のメニューの<span class="red">"Items"</span>をクリックして始めましょう！</p>
     </div>
 
 </body>

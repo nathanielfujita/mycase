@@ -4,12 +4,37 @@
     text-align: center;
     border-bottom-width: 3px;
     border-bottom: double 5px #FFA500;
+    font-size: 50px;
+    position: fixed;
+    width:100%;
+    margin-top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.title {
+    font-family: "游ゴシック Light";
+    border-bottom-width: 3px;
+    border-bottom: double 5px #FFA500;
+    font-weight: bold;
+    font-size: 50px;
+    width:100%;
+    margin-top: -80px;
+
+
+}
+
+.titlelinks{
+    margin-top: -70px;
+    margin-right: -850px;
 }
 
 #a {
     text-align: center;
-        font-family: "游ゴシック Light";
+    font-family: "游ゴシック Light";
     font-weight: bold;
+    z-index: 1;
+    padding-top: 90px;
 }
 
 .bottomspace {
