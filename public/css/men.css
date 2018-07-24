@@ -57,10 +57,7 @@ body{
 
 
 .pics{
-    float: left;
-    display: flex;
-    width: 1500px;
-    overflow-y: scroll;
+    text-align: center;
     
   
 }
