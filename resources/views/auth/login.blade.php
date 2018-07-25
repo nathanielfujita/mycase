@@ -22,7 +22,7 @@
                 {!! Form::submit('ログイン', ['class' => 'btn btn-warning btn-block']) !!}
             {!! Form::close() !!}
 
-            <p><font size="5">初めての方は {!! link_to_route('signup.get', 'こちら!') !!}</font></p>
+            <p><font size="8">初めての方は {!! link_to_route('signup.get', 'こちら!') !!}</font></p>
             
             
         </div>

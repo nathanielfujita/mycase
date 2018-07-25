@@ -1,9 +1,9 @@
 <head>
-        <link rel="stylesheet" href="css/cart.css">
 <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/cart.css">
 <!-- ビューポートの設定 -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">        
+<meta name="viewport" content="width=device-width,initial-scale=1">        
 </head>      
         
         
@@ -16,16 +16,22 @@
     </div>
 
 <br>
+
 <div id="a"> 
+
+<div class="row">
+
 @if(count($carts) == null)
         
     @else
     @foreach ($carts as $cart)
+        <div class="pics col-sm-4 col-xs-12">
         <img src="{{url($cart->image)}}">
         <div>
         {!! Form::open(['route' => ['carts.discart', $cart->id], 'method' => 'delete']) !!}
         {!! Form::submit('カートから外す', ['class' => "btn btn-warning btn-md"]) !!}
         {!! Form::close() !!}
+        </div>
         </div>
     @endforeach
 @endif
@@ -34,18 +40,29 @@
 @if(count($carts) == null)
          カートに何も入っていません
     @else
-    <br>
-        <br>{!! link_to_route('selectplan.index', 'チェックアウトへ進む', ['id' => $cart->id], ['class' => 'btn btn-success btn-lg']) !!}
+
+     </div>
+     <br>
+        {!! link_to_route('selectplan.index', 'チェックアウトへ進む', ['id' => $cart->id], ['class' => 'btn btn-success btn-lg']) !!}
+    
+    
+    
     @endif
         <br>
+           
             <br>
-            <br>{!! link_to_route('men.index', "Men's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}
-            <br>
-            <div class= "bottomspace">
-            <br>{!! link_to_route('women.index', "Women's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}
+            <center>
+            {!! link_to_route('men.index', "Men's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}
+            {!! link_to_route('women.index', "Women's Fashion一覧に戻る", null, ['class' => 'btn btn-danger btn-sm']) !!}
+            </center>
+            
+            
             </div>
+            </div>
+
             
 </div>    
+</div>
        
     
 

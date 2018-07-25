@@ -55,12 +55,13 @@ body{
 }
 
 
-
-.pics{
-    text-align: center;
+.row {
+    margin: 0;
+}
+.pics {
+    
 }
 
-img{
-    width: 350px;
-    height: 400px;
+.pics img {
+    max-width: 100%;
 }
