@@ -48,11 +48,14 @@
     @else
     
         @foreach($items as $item)
-        <div class="pics col-sm-4">
+        <div class="pics col-sm-4 col-xs-12">
             <div><img src="{{url($item->image)}}"></div>
+            
             {!! Form::open(['route' => ['carts.store', $item->id], 'method' => 'store']) !!}
             {!! Form::submit('カートに追加するにはログイン！', ['class' => 'btn btn-primary btn-md']) !!}
             {!! Form::close() !!}
+            
+            </div>
             @endforeach
         </div>
     @endif

@@ -2,7 +2,7 @@
 
 <!-- Bootstrap CSS-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/men.css">
+<link rel="stylesheet" href="css/women.css">
 </head>
 
 
@@ -50,11 +50,13 @@
     @else
     
         @foreach($items as $item)
-        <div class="pics col-sm-4">
+        <div class="pics col-sm-4 col-xs-12">
             <div><img src="{{url($item->image)}}"></div>
             {!! Form::open(['route' => ['carts.store', $item->id], 'method' => 'store']) !!}
             {!! Form::submit('カートに追加するにはログイン！', ['class' => 'btn btn-primary btn-md']) !!}
             {!! Form::close() !!}
+            
+            </div>
             @endforeach
         </div>
     @endif
@@ -63,12 +65,13 @@
     
     <br>
     <br>
-{!! link_to_route('carts.index', 'カート一覧に進む', null, ['class' => 'btn btn-success btn-lg']) !!}
+<center>
+    {!! link_to_route('carts.index', 'カート一覧に進む', null, ['class' => 'btn btn-success btn-lg']) !!}
     
     <br>
         <br>
         {!! link_to_route('carts.welcome', 'ホームに戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
-    
+    </center>
 </div>
 
 </body>
