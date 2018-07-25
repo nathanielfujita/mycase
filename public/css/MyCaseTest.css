@@ -18,6 +18,10 @@ header{
     width: 100%;
     z-index: 10; /*メニューバーを前面に*/
 }
+
+
+
+
 ul {
     padding: 0;
 }
@@ -26,7 +30,7 @@ ul {
     width: 110px;
     height: auto;
     position: static;
-    margin: 0px;
+    margin-top: -10px ;
     
 }
 
@@ -52,12 +56,14 @@ ul {
   　height: 3.6em;/* 2em（行）x line-heightの1.8 */
   　line-height: 1.8;/*1em(行)の高さ*/
   　width: 100%;
-  　margin: -50px;
+  　margin-top: -50px;
   　padding:0;
+  　
 }
 
 .sidebar a {
     display: block;
+    margin-bottom: 10px;
 }
 
 .sidebar > ul > li a:hover{
@@ -97,7 +103,7 @@ ul {
     color: #FF0000;
 }
 
-br .ja{
+.ja{
     font-size: 10px;
     font-family: 'MS ゴシック',"cursive",sans-serif;
 }

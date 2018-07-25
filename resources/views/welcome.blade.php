@@ -29,9 +29,10 @@
             <div class="sidebar">
             　
             　 <div class = "logo"><img src="homeimage/MyCase-logo.jpg" alt="My Case"></div>
+             　  
+             　  
+             　 
              　    <ul>
-             　        
-             　        
              　        
              　        @if(Auth::check())
                         <li> <font color="black", size="5">{{Auth::user()->email}}さん</font> </li>
@@ -40,6 +41,9 @@
              　        @else
              　        <li>{!! link_to_route('login', 'ログイン/登録') !!}</li>
              　        @endif
+             　     
+             　        
+             　        
              　        
              　        <li><a href = "#"><span class="en">Top</span><br class="ja">トップ</br></a></li>
                       <li><a href = "#1st-line"><span class="en">About My Case</span><br class="ja">MyCaseとは</br></a></li>
@@ -109,6 +113,7 @@
 
     <p class="selecthotel">※配送先は各国（台湾・韓国・ハワイ）それぞれ<br>５つの人気ホテルからお選びいただく形になります。</p>
     
+    <div id="2nd-line">
     <div class="powerpoint">
 
             <img src="homeimage/HowtouseMyCase.PNG" alt="AboutMyCase">
@@ -116,7 +121,7 @@
     </div>
     </center>
  
-    <div id="2nd-line">
+    
         <div class ="row">
             <div class="pictures col-sm-5 col-sm-offset-1">
                 <div class>
