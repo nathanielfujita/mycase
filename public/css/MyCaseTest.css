@@ -30,9 +30,11 @@ ul {
     width: 110px;
     height: auto;
     position: static;
-    margin-top: -10px ;
+    margin: -10px, 0, -20px,0 ;
+
     
-}
+    }
+
 
 .sidebar { 
     clear: both;
@@ -45,6 +47,7 @@ ul {
     padding: -50px;
     opacity: 0.5;
     font-family: "游ゴシック Light","cursive","Courier";
+
 }
 
 
@@ -63,7 +66,6 @@ ul {
 
 .sidebar a {
     display: block;
-    margin-bottom: 10px;
 }
 
 .sidebar > ul > li a:hover{

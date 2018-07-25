@@ -35,8 +35,8 @@
              　    <ul>
              　        
              　        @if(Auth::check())
-                        <li> <font color="black", size="5">{{Auth::user()->email}}さん</font> </li>
-             　        <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
+                        <li> <font color="black", size="3">{{Auth::user()->email}}さん</font> </li>
+             　          <li class="logout">{!! link_to_route('logout.get', 'ログアウト') !!}</li>
              　        
              　        @else
              　        <li>{!! link_to_route('login', 'ログイン/登録') !!}</li>
