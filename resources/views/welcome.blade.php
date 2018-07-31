@@ -35,11 +35,11 @@
              　    <ul>
              　        
              　        @if(Auth::check())
-                        <li> <font color="black", size="3">{{Auth::user()->email}}さん</font> </li>
+                        <li> <font color="black", size="5">{{Auth::user()->email}}さん</font> </li>
              　          <li class="logout">{!! link_to_route('logout.get', 'ログアウト') !!}</li>
              　        
              　        @else
-             　        <li>{!! link_to_route('login', 'ログイン/登録') !!}</li>
+             　        <li><span class="black">{!! link_to_route('login', 'ログイン/登録') !!}</span></li>
              　        @endif
              　     
              　        
@@ -54,7 +54,7 @@
                    
 <!--bootstrapでデザイン変える、性別選んだらアイテムページに飛べるようにする、-->
                       <li class="dropdown">
-					      <a class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="encolor">Items</span><span class="color"><br>商品</br></span><span class="caret"></span></a>
+					      <a class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="encolor">始める！</span><span class="color"><br>商品</br></span><span class="caret"></span></a>
 					      <ul class="dropdown-menu" role="menu">
 						      <li>{!! link_to_route('men.index', 'Men') !!}</li>
 						      <li>{!! link_to_route('women.index', 'Women') !!}</li>
@@ -239,7 +239,7 @@
     
     
     <div class="checknavbar col-sm-offset-2">
-        <p>それでは左側のメニューの<span class="red">"Items"</span>をクリックして始めましょう！</p>
+        <p>それでは左側のメニューの<span class="red">"始める！"</span>をクリックして始めましょう！</p>
     </div>
 
 </body>

@@ -43,7 +43,7 @@
 
      </div>
      <br>
-        {!! link_to_route('selectplan.index', 'チェックアウトへ進む', ['id' => $cart->id], ['class' => 'btn btn-success btn-lg']) !!}
+        {!! link_to_route('selectplan.index', 'プラン選択へ進む', ['id' => $cart->id], ['class' => 'btn btn-success btn-lg']) !!}
     
     
     

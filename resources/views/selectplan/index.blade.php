@@ -45,7 +45,7 @@
             @if(count($carts)>6)
            ３泊４日
             <br>＊６点まで ※カートの中身が６点を超えているので選択できません
-            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
             @endif            
             
             
@@ -69,7 +69,7 @@
             @if(count($carts)>9)
            ４泊５日
             <br>＊９点まで ※カートの中身が９点を超えているので選択できません
-            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
             @endif
             
             
@@ -93,7 +93,7 @@
             @if(count($carts)>12)
            ５泊６日
             <br>＊１２点まで ※カートの中身が１２点を超えているので選択できません
-            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
             @endif            
             
             @if(count($carts)<=12)
@@ -116,7 +116,7 @@
             @if(count($carts)>15)
            ６泊７日
             <br>＊１５点まで ※カートの中身が１５点を超えているので選択できません
-            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-primary btn-lg']) !!}
+            <br>{!! link_to_route('carts.index', 'カート一覧へ戻る', null, ['class' => 'btn btn-danger btn-sm']) !!}
             @endif 
             
             
